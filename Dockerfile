@@ -3,6 +3,8 @@ FROM ubuntu:20.04
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV GOTTY_TAG_VER v1.0.1
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=UTC
 
 RUN apt-get update && \
     apt-get install -y \
